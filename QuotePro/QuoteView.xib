@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuoteView" customModule="QuotePro" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="4ks-9c-yRQ" id="vOv-nC-zdG"/>
+                <outlet property="quote" destination="giL-pI-gMU" id="H7v-Hi-tx0"/>
+                <outlet property="quoteBy" destination="4bf-bg-bfh" id="Cjr-dl-ntP"/>
+                <outlet property="view" destination="1ML-Kq-EZp" id="bh8-1r-10V"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="MyCustomView" id="1ML-Kq-EZp">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ks-9c-yRQ">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote By" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-bg-bfh">
+                    <rect key="frame" x="267.5" y="239" width="66" height="18"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giL-pI-gMU">
+                    <rect key="frame" x="270.5" y="168" width="59" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4ks-9c-yRQ" firstAttribute="leading" secondItem="1ML-Kq-EZp" secondAttribute="leading" id="2YV-yZ-XbT"/>
+                <constraint firstItem="4bf-bg-bfh" firstAttribute="top" secondItem="giL-pI-gMU" secondAttribute="bottom" constant="47.5" id="A7m-DN-vUk"/>
+                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="giL-pI-gMU" secondAttribute="trailing" constant="10" id="IXT-P2-4zi"/>
+                <constraint firstAttribute="bottom" secondItem="4ks-9c-yRQ" secondAttribute="bottom" id="JbA-Jc-h92"/>
+                <constraint firstItem="giL-pI-gMU" firstAttribute="centerX" secondItem="1ML-Kq-EZp" secondAttribute="centerX" id="Je0-2R-tPv"/>
+                <constraint firstItem="4ks-9c-yRQ" firstAttribute="centerX" secondItem="1ML-Kq-EZp" secondAttribute="centerX" id="Keg-wK-qSq"/>
+                <constraint firstAttribute="trailing" secondItem="4ks-9c-yRQ" secondAttribute="trailing" id="ToF-EI-foW"/>
+                <constraint firstItem="4bf-bg-bfh" firstAttribute="centerX" secondItem="1ML-Kq-EZp" secondAttribute="centerX" id="WRa-D6-01Y"/>
+                <constraint firstItem="4ks-9c-yRQ" firstAttribute="centerY" secondItem="1ML-Kq-EZp" secondAttribute="centerY" id="XgK-DD-MBv"/>
+                <constraint firstItem="giL-pI-gMU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ML-Kq-EZp" secondAttribute="leadingMargin" constant="10" id="YfG-Qv-VJa"/>
+                <constraint firstItem="4ks-9c-yRQ" firstAttribute="top" secondItem="1ML-Kq-EZp" secondAttribute="top" id="aFB-WZ-Q7d"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4bf-bg-bfh" secondAttribute="trailing" constant="10" id="co8-0z-yli"/>
+                <constraint firstItem="4bf-bg-bfh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1ML-Kq-EZp" secondAttribute="leading" constant="10" id="kpb-TP-pE9"/>
+                <constraint firstItem="giL-pI-gMU" firstAttribute="centerY" secondItem="1ML-Kq-EZp" secondAttribute="centerY" multiplier="0.6" id="vZ4-ir-YW0"/>
+            </constraints>
+            <point key="canvasLocation" x="280" y="-272"/>
+        </view>
+    </objects>
+</document>
